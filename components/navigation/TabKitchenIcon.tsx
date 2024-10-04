@@ -5,7 +5,7 @@ import { type ComponentProps } from "react";
 export function TabKitchenIcon({
   style,
   ...rest
-}: IconProps<ComponentProps<typeof FontAwesome6>["kitchen-set"]>) {
+}: IconProps<ComponentProps<typeof FontAwesome6>["name"]>) {
   return (
     <FontAwesome6 size={28} style={[{ marginBottom: -3 }, style]} {...rest} />
   );

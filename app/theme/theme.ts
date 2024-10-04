@@ -5,7 +5,11 @@ export const theme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    primary: '#6200ee',
-    accent: '#03dac4',
+    primary: '#ff5722',  // Un color naranja intenso
+    accent: '#4caf50',   // Un verde más suave
+    background: '#121212', // Fondo oscuro
+    surface: '#37474f',   // Superficie gris oscuro
+    text: '#ffffff',      // Texto blanco
+    placeholder: '#b0bec5', // Placeholder gris claro
   },
 };

@@ -1,13 +1,13 @@
 import { Tabs } from "expo-router";
 import React from "react";
 
-import { TabHomeIcon } from "@/components/navigation/TabHomeIcon";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
-import { TabKitchenIcon } from "@/components/navigation/TabKitchenIcon";
-import { TabBarIcon } from "@/components/navigation/TabBarIcon";
+import { AdminAddIcon } from "@/components/navigation/AdminAddIcon";
+import { TabHomeIcon } from "@/components/navigation/TabHomeIcon";
+import { AdminEditIcon } from "@/components/navigation/AdminEditIcon";
 
-export default function TabLayout() {
+export default function AdminLayout() {
   const colorScheme = useColorScheme();
 
   return (
@@ -29,26 +29,25 @@ export default function TabLayout() {
           ),
         }}
       />
-
       <Tabs.Screen
-        name="Cocina"
+        name="Add"
         options={{
-          title: "Cocina",
+          title: "Añadir",
           tabBarIcon: ({ color, focused }) => (
-            <TabKitchenIcon
-              name={focused ? "kitchen-set" : "kitchen-set"}
+            <AdminAddIcon
+              name={focused ? "pluscircle" : "pluscircleo"}
               color={color}
             />
           ),
         }}
       />
       <Tabs.Screen
-        name="Bar"
+        name="Edit"
         options={{
-          title: "Bar",
+          title: "Editar",
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "beer" : "beer-outline"}
+            <AdminEditIcon
+              name={focused ? "content-save-edit" : "content-save-edit-outline"}
               color={color}
             />
           ),

@@ -5,7 +5,7 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <Pressable>
-        <Link href="/admin">Ir a Admin</Link>
+        <Link href="./(tabs)">Ir a Bar</Link>
       </Pressable>
     </View>
   );
