@@ -29,19 +29,6 @@ export default function TabLayout() {
           ),
         }}
       />
-
-      <Tabs.Screen
-        name="Cocina"
-        options={{
-          title: "Cocina",
-          tabBarIcon: ({ color, focused }) => (
-            <TabKitchenIcon
-              name={focused ? "kitchen-set" : "kitchen-set"}
-              color={color}
-            />
-          ),
-        }}
-      />
       <Tabs.Screen
         name="Bar"
         options={{
@@ -49,6 +36,18 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "beer" : "beer-outline"}
+              color={color}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Cocina"
+        options={{
+          title: "Cocina",
+          tabBarIcon: ({ color, focused }) => (
+            <TabKitchenIcon
+              name={focused ? "kitchen-set" : "kitchen-set"}
               color={color}
             />
           ),
